@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.majada.jhona.practica5_1.MainActivity"
+    android:orientation = "vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:gravity = "center_horizontal"
+        android:layout_width="332dp"
+        android:layout_height="111dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="100dp"
+            app:srcCompat="@drawable/cat"
+            android:id="@+id/gato"
+            android:layout_height="100dp"
+            android:padding = "3dp"
+            android:clickable="true"
+            android:onClick="onClickImatgeAnimal"/>
+
+        <ImageView
+            app:srcCompat="@drawable/cavall"
+            android:id="@+id/caballo"
+            android:layout_width="100dp"
+            android:padding = "3dp"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:onClick="onClickImatgeAnimal"/>
+
+        <ImageView
+            app:srcCompat="@drawable/anec"
+            android:id="@+id/pato"
+            android:layout_width="100dp"
+            android:padding = "3dp"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:onClick="onClickImatgeAnimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity = "center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="333dp"
+        android:layout_height="94dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/porc"
+            android:id="@+id/porc"
+            android:layout_weight="0.26"
+            android:padding = "3dp"
+            android:layout_width="100dp"
+            android:clickable="true"
+            android:onClick="onClickImatgeAnimal"/>
+
+        <ImageView
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/gos"
+            android:id="@+id/perro"
+            android:layout_width="100dp"
+            android:padding = "3dp"
+            android:clickable="true"
+            android:onClick="onClickImatgeAnimal"/>
+
+        <ImageView
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/vaca"
+            android:id="@+id/vaca"
+            android:layout_width="100dp"
+            android:padding = "3dp"
+            android:clickable="true"
+            android:onClick="onClickImatgeAnimal"/>
+
+    </LinearLayout>
+</LinearLayout>
