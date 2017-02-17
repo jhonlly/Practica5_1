@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
                 so = MediaPlayer.create(this, R.raw.vaca);
                 break;
         }
-
+        // Después de seleccionar la cacion la reproduce.
         so.start();
 
-        // Alliberar el MediaPlayer quan acabi de reproduir la pista d'àudio
+        //Libera el mediaplayer cuando termina de reproducir una cancion.
         so.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
 
             @Override

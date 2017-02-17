@@ -15,8 +15,8 @@
 
     <LinearLayout
         android:gravity = "center_horizontal"
-        android:layout_width="332dp"
-        android:layout_height="111dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:weightSum="1">
@@ -26,6 +26,7 @@
             app:srcCompat="@drawable/cat"
             android:id="@+id/gato"
             android:layout_height="100dp"
+            android:background = "#00C0C0"
             android:padding = "3dp"
             android:clickable="true"
             android:onClick="onClickImatgeAnimal"/>
@@ -35,6 +36,7 @@
             android:id="@+id/caballo"
             android:layout_width="100dp"
             android:padding = "3dp"
+            android:background= "#C0C000"
             android:layout_height="100dp"
             android:clickable="true"
             android:onClick="onClickImatgeAnimal"/>
@@ -46,22 +48,25 @@
             android:padding = "3dp"
             android:layout_height="100dp"
             android:clickable="true"
+            android:background = "#C000C0"
             android:onClick="onClickImatgeAnimal"/>
     </LinearLayout>
 
     <LinearLayout
         android:gravity = "center_horizontal"
-        android:orientation="horizontal"
-        android:layout_width="333dp"
-        android:layout_height="94dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:weightSum="1">
 
         <ImageView
             android:layout_height="100dp"
             app:srcCompat="@drawable/porc"
             android:id="@+id/porc"
-            android:layout_weight="0.26"
+
             android:padding = "3dp"
+            android:background ="#00C000"
             android:layout_width="100dp"
             android:clickable="true"
             android:onClick="onClickImatgeAnimal"/>
@@ -71,6 +76,7 @@
             app:srcCompat="@drawable/gos"
             android:id="@+id/perro"
             android:layout_width="100dp"
+            android:background="#0000C0"
             android:padding = "3dp"
             android:clickable="true"
             android:onClick="onClickImatgeAnimal"/>
@@ -80,6 +86,7 @@
             app:srcCompat="@drawable/vaca"
             android:id="@+id/vaca"
             android:layout_width="100dp"
+            android:background = "#C00000"
             android:padding = "3dp"
             android:clickable="true"
             android:onClick="onClickImatgeAnimal"/>
